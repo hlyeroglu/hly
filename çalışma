@@ -10,9 +10,9 @@ printf("2. sayiyi giriniz:");
 scanf("%d" ,&sayi2);
 
 printf("\n\n1.Toplama\n");
-printf("Cikarma\n");
-printf("Bölme\n");
-printf("Carpma\n");
+printf("2.Cikarma\n");
+printf("3.Bölme\n");
+printf("4.Carpma\n");
 
 printf("\nislemi seciniz:");
 scanf("%d" ,&islem);
@@ -22,13 +22,13 @@ switch(islem){
 printf("Toplama isleminin sonucu : %d" ,sayi1 + sayi2);
 break;
  case 2:
-printf("Cikarma isleminin sonucu : %d ,sayi1 - sayi2);
+printf("Cikarma isleminin sonucu : %d" ,sayi1 - sayi2);
 break;
  case 3:
-printf("Bölme isleminin sonucu : %f ,(float) sayi1 / (float) sayi2);
+printf("Bölme isleminin sonucu : %f" ,(float) sayi1 / (float) sayi2);
 break;
  case  4:
-printf("Carpma isleminin sonucu %d ,sayi1 * sayi2);
+printf("Carpma isleminin sonucu %d" ,sayi1 * sayi2);
 break;
  default:
 printf("Lutfen bir sayi giriniz..");
