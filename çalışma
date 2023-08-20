@@ -102,6 +102,57 @@ default:
 \n\n\n
 
 
+#include <stdio.h>
+
+int main() {
+    float vizeNotu, finalNotu;
+    printf("Vize notunuzu giriniz: ");
+    scanf("%f", &vizeNotu);
+
+    printf("Final notunuzu giriniz: ");
+    scanf("%f", &finalNotu);
+
+    // Vize notunun %40'ı, final notunun %60'ı alınır
+    float dersNotu = (vizeNotu * 0.4) + (finalNotu * 0.6);
+
+    printf("Ders notunuz: %.2f\n", dersNotu);
+
+    if (dersNotu >= 60) {
+        printf("Tebrikler, dersi gectiniz!\n");
+    } else {
+        printf("Dersi gecemediniz.\n");
+    }
+
+    return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+int main() {
+    int kahveAdet = 10;
+    int para;
+
+    printf("Kahve otomatina hos geldiniz!\n");
+    printf("Lutfen kac kahve almak istediginizi giriniz: ");
+    scanf("%d", &para);
+
+    if (para >= 2 && para <= 5) {
+        if (kahveAdet >= para) {
+            printf("Kahveler hazirlaniyor...\n");
+            printf("Toplam tutar: %d TL\n", para * 2);
+            printf("Kahveler hazir. Afiyet olsun!\n");
+            kahveAdet -= para;
+        } else {
+            printf("Uzgunuz, yeterli kahve bulunmamaktadir.\n");
+        }
+    } else {
+        printf("Gecersiz miktar girdiniz. Lutfen 2 ile 5 arasinda bir miktar giriniz.\n");
+    }
+
+    return 0;
+}
 
 
 
