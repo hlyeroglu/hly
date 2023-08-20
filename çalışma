@@ -188,6 +188,277 @@ print("Merhaba,", tam_ad)
 
 \n\n\n
 
+#include <stdio.h>
+
+void myFunction(char name[], int age) {
+  printf("Merhaba %s. Sen %d yaşındasın.\n", name, age);
+}
+
+int main() {
+  myFunction("Lisa", 2);
+  myFunction("Jennie", 14);
+  myFunction("Jisoo", 30);
+  return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+void myFunction(char name[], int age) {
+  printf("Merhaba %s. Sen %d yaşındasın.\n", name, age);
+}
+
+int main() {
+  myFunction("Lisa", 2);
+  myFunction("Jennie", 14);
+  myFunction("Jisoo", 30);
+  return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+int sum(int k);
+
+int main() {
+  int result = sum(10);
+  printf("%d", result);
+  return 0;
+}
+
+int sum(int k) {
+  if (k > 0) {
+    return k + sum(k - 1);
+  } else {
+    return 0;
+  }
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+struct Car {
+  char brand[50];
+  char model[50];
+  int year;
+};
+
+int main() {
+  struct Car car1  = {"Fiat", "Marea", 2004};
+  struct Car car2  = {"Ford", "Mustang", 1969};
+  struct Car car3  = {"Toyota", "Corolla", 2011};
+
+  printf("%s %s %d\n", car1.brand, car1.model, car1.year);
+  printf("%s %s %d\n", car2.brand, car2.model, car2.year);
+  printf("%s %s %d\n", car3.brand, car3.model, car3.year);
+
+  return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+enum Level {
+  DÜŞÜK = 1,
+  ORTA,
+  YÜKSEK
+};
+
+int main() {
+  enum Level myVar = ORTA;
+  
+  switch (myVar) {
+    case 1:
+      printf("Düşük seviye");
+      break;
+    case 2:
+      printf("Orta seviye");
+      break;
+    case 3:
+      printf("Yüksek seviye");
+      break;
+  }
+   
+  return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+int main() {
+  int time = 22;
+  if (time < 8) {
+    printf("Günaydın.");
+  } else if (time < 18) {
+    printf("İyi Günler.");
+  } else {
+    printf("İyi Geceler.");
+  }
+  return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+int main() {
+  int gün=5;
+  
+  switch (gün) {
+    case 1:
+      printf("Pazartesi");
+      break;
+    case 2:
+      printf("Salı");
+      break;
+    case 3:
+      printf("Çarşamba");
+      break;
+    case 4:
+      printf("Perşembe");
+      break;
+    case 5:
+      printf("Cuma");
+      break;
+    case 6:
+      printf("Cumartesi");
+      break;
+    case 7:
+      printf("Pazar");
+      break;
+  }
+    
+  return 0;
+}
+
+\n\n\n
+
+#include <stdio.h>
+
+int main() {
+
+  char firstName[30];
+
+  printf("Lütfen isminizi girin ve ilerle tuşunsa basın: \n");
+  scanf("%s", firstName);
+  printf("Merhaba %s", firstName);
+  
+  return 0;
+}
+
+\n\n\n
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 40;
+  int y = 15;
+  if (x > y) {
+    cout << "x büyüktür y";
+  }  
+  return 0;
+}
+
+\n\n\n
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int time = 22;
+  if (time < 18) {
+    cout << "İyi Günler.";
+  } else {
+    cout << "İyi Akşamlar.";
+  }
+  return 0;
+}
+
+\n\n\n
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNumbers[5] = {10, 15, 20, 25, 30};
+  for (int i = 0; i < 5; i++) {
+    cout << myNumbers[i] << "\n";
+  }
+  return 0;
+}
+
+\n\n\n
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void myFunction(string country = "Türkiye") {
+  cout << country << "\n";
+}
+
+int main() {
+  myFunction("Kore");
+  myFunction("Japonya");
+  myFunction();
+  myFunction("Çin");
+  return 0;
+}
+
+\n\n\n
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+void myFunction(string fname, int age) {
+  cout << fname << " Eroğlu. " << age << " yaşında. \n";
+}
+
+int main() {
+  myFunction("Hülya", 19);
+  myFunction("Bengüsu", 16);
+  myFunction("Buğlem", 10);
+  return 0;
+}
+
+\n\n\n
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  try {
+    int yas = 14;
+    if (yas >= 18) {
+      cout << "Erişim Onaylandı. - Yaşınız ideal.";
+    } else {
+      throw (yas);
+    }
+  }
+  catch (int myNum) {
+    cout << "Erişim engellendi. - Yaşınız 18'den küçük.\n";
+    cout << "Yaş: " << myNum;  
+  }
+  return 0;
+}
+
+\n\n\n
+
+x, y, z = "19", "16", "10"
+
+print(x)
+print(y)
+print(z)
+
+\n\n\n
+
 
 
 
