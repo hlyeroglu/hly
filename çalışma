@@ -154,5 +154,42 @@ int main() {
     return 0;
 }
 
+\n\n\n
+
+x = str(3)
+y = int(3)
+z = float(3)
+
+print(x)
+print(y)
+print(z)
+
+\n\n\n
+
+x = 7
+y = 19
+print(x + y)
+
+\n\n\n
+
+a = "Merhaba"
+b = "Hülya"
+c = a + b
+print(c)
+
+\n\n\n
+
+ad = input("Adınızı girin: ")
+soyad = input("Soyadınızı girin: ")
+
+tam_ad = ad + " " + soyad
+
+print("Merhaba,", tam_ad)
+
+\n\n\n
+
+
+
+
 
 
